@@ -2,25 +2,17 @@
 
 declare(strict_types=1);
 
-include 'User.php';
-include 'functions.php';
+include_once __DIR__ . '/User.php';
+include_once __DIR__ . '/functions.php';
 
 $users = getUsers();
 ?>
 
-<!doctype html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Simple CRUD App</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-</head>
+<?php include __DIR__ . '/inc/header.php'; ?>
 
 <body>
-  <table class="table">
-    <thead>
+  <table class="table table-borderless">
+    <thead class="table-dark">
       <tr>
         <th>Name</th>
         <th>Username</th>
@@ -37,12 +29,20 @@ $users = getUsers();
           <td><?php echo $user->username ?></td>
           <td><?php echo $user->email ?></td>
           <td><?php echo $user->phone ?></td>
-          <td><?php echo $user->website ?></td>
+          <td>
+            <a href="https://<?php echo $user->website ?>" target="_blank">
+              <?php echo $user->website ?>
+            </a>
+          </td>
+          <td>
+            <a href="view.php?id=<?php echo $user->id ?>" class="btn btn-outline-info">View</a>
+            <a href="update.php?id=<?php echo $user->id ?>" class="btn btn-outline-secondary">Update</a>
+            <a href="delete.php?id=<?php echo $user->id ?>" class="btn btn-outline-danger">Delete</a>
+          </td>
         </tr>
       <?php endforeach; ?>
     </tbody>
   </table>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-</body>
 
-</html>
+  <?php include __DIR__ . '/inc/footer.php'; ?>

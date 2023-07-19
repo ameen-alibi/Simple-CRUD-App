@@ -1,5 +1,8 @@
 <?php
 
+declare(strict_types=1);
+include_once 'User.php';
+
 function getUsers()
 {
   $jsondata = file_get_contents('users.json');
@@ -24,12 +27,20 @@ function getUsers()
   return $users;
 }
 
-function getUserById($id)
+function getUserById(int $id)
 {
+  $users = getUsers();
+  foreach($users as $user){
+    if ($id === $user->id){
+      return $user;
+    }
+  }
+  return null;
 }
 
-function updateUser($id)
+function updateUser($user_data)
 {
+  
 }
 
 function deleteUser($id)
