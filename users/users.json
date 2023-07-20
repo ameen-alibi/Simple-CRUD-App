@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "username": "johndoe",
+        "email": "john.doe@example.com",
+        "phone": "+1 (555) 123-4567",
+        "website": "johndoe.com"
+    },
+    {
+        "id": 2,
+        "name": "Jane Smith",
+        "username": "janesmith",
+        "email": "jane.smith@example.com",
+        "phone": "+1 (555) 987-6543",
+        "website": "janesmith.com"
+    },
+    {
+        "id": 3,
+        "name": "Michael Johnson",
+        "username": "michaelj",
+        "email": "michael.johnson@example.com",
+        "phone": "+1 (555) 567-8901",
+        "website": "michaelj.com"
+    },
+    {
+        "id": 4,
+        "name": "Emily Williams",
+        "username": "emilyw",
+        "email": "emily.williams@example.com",
+        "phone": "+1 (555) 234-5678",
+        "website": "emilyw.com"
+    },
+    {
+        "id": 5,
+        "name": "Daniel Brown",
+        "username": "dannyb",
+        "email": "daniel.brown@example.com",
+        "phone": "+1 (555) 876-5432",
+        "website": "dannyb.com"
+    },
+    {
+        "id": 6,
+        "name": "Sarah Davis",
+        "username": "sarahd",
+        "email": "sarah.davis@example.com",
+        "phone": "+1 (555) 345-6789",
+        "website": "sarahd.com"
+    },
+    {
+        "id": 7,
+        "name": "Matthew Wilson",
+        "username": "mattw",
+        "email": "matthew.wilson@example.com",
+        "phone": "+1 (555) 678-9012",
+        "website": "mattw.com"
+    },
+    {
+        "id": 8,
+        "name": "Olivia Taylor",
+        "username": "oliviat",
+        "email": "olivia.taylor@example.com",
+        "phone": "+1 (555) 789-0123",
+        "website": "oliviat.com"
+    },
+    {
+        "id": 9,
+        "name": "James Martinez",
+        "username": "jamesm",
+        "email": "james.martinez@example.com",
+        "phone": "+1 (555) 901-2345",
+        "website": "jamesm.com"
+    },
+    {
+        "id": 10,
+        "name": "Sophia Anderson",
+        "username": "sophiaa",
+        "email": "sophia.anderson@example.com",
+        "phone": "+1 (555) 321-0987",
+        "website": "sophiaa.com"
+    }
+]

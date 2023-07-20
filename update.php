@@ -53,12 +53,10 @@ if ($request_method === 'post') {
                 <label for="website" class="form-label">Website:</label>
                 <input name="website" type="text" class="form-control" id="website" value="<?php echo $user->website ?>">
               </div>
-              <div class="m-3">
-                <input name="picture" type="file" class="form-control-file">
-              </div>
               <button type="submit" class="btn btn-outline-success">Submit</button>
             </form>
-          <?php elseif ($request_method === 'post') : ?>
+          <?php elseif ($request_method === 'post') : 
+            header('location:index.php');?>
             <div class="alert alert-success" role="alert">
               User Details Updated Succesfully!
             </div>
@@ -68,8 +66,6 @@ if ($request_method === 'post') {
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-</body>
 
-</html>
 
 <?php include __DIR__ . '/inc/footer.php'; ?>
