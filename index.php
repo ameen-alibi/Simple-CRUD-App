@@ -19,7 +19,7 @@ $users = getUsers();
         <th>Email</th>
         <th>Phone</th>
         <th>Website</th>
-        <th>Actions</th>
+        <th>Actions</th>  
       </tr>
     </thead>
     <tbody>
